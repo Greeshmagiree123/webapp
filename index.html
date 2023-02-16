@@ -4,12 +4,7 @@
   <title>Login Page</title>
 </head>
 <body>
-    <!-- <nav>
-        <ul>
-          <li><a href="C:\Users\GREESHMA\Documents\GitHub\webapp\todo.html">Todo List</a></li>
-          <li><a href="#" onclick="logout()">Log Out</a></li>
-        </ul>
-      </nav> -->
+   
   <form>
     <input type="text" placeholder="Username" id="username">
     <input type="password" placeholder="Password" id="password">
@@ -22,13 +17,13 @@
       var password = document.getElementById("password").value;
 
       if (username === "admin" && password === "12345") {
-        // Redirect to main page
+       
         redirectToMainPage();
       } else {
         alert("Invalid username or password.");
       }
       function redirectToMainPage() {
-  // Replace the current page URL with the main page URL
+  
   window.location.replace("main.html");
 }
 
