@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Main Page</title>
+	<style>
+		/* Style the navigation bar */
+		.navbar {
+			overflow: hidden;
+			background-color: #333;
+			position: fixed;
+			top: 0;
+			width: 100%;
+		}
+
+		/* Style the links inside the navigation bar */
+		.navbar a {
+			float: left;
+			display: block;
+			color: #f2f2f2;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			font-size: 17px;
+		}
+
+		/* Change the color of links on hover */
+		.navbar a:hover {
+			background-color: #ddd;
+			color: black;
+		}
+
+		/* Active link */
+		.active {
+			background-color: #4CAF50;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<!-- Navigation bar -->
+	<div class="navbar">
+		<a href="C:\Users\GREESHMA\Documents\GitHub\webapp\todo.html" class="active" onclick="showTodoList()">Todo List</a>
+		<a href="C:\Users\GREESHMA\Documents\GitHub\webapp\index.html" onclick="logOut()">Log Out</a>
+	</div>
+
+	<!-- Content -->
+	<div id="content">
+		<!-- Default content, which will be replaced by the Todo List -->
+		<p>Click the "Todo List" menu to show your todo list.</p>
+	</div>
+
+	<!-- <script>
+		// Function to show the Todo List
+		function showTodoList() {
+			// Replace the content of the "content" div with the Todo List
+			document.getElementById("content").innerHTML = "<h2>Todo List</h2><ul><li>Task 1</li><li>Task 2</li><li>Task 3</li></ul>";
+			// Add the "active" class to the "Todo List" menu and remove it from the "Log Out" menu
+			document.getElementsByClassName("active")[0].classList.remove("active");
+			document.getElementsByTagName("a")[0].classList.add("active");
+		}
+
+		// Function to log out
+		function logOut() {
+			// Redirect to the login page
+			window.location.replace("login.html");
+		}
+	</script>
+</body>
+</html>
